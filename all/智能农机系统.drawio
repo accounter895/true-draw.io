@@ -35,8 +35,26 @@
         <mxCell id="AnIz2MZ1j-742l2jBez1-36" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;把onnx形式的模型转化为rknn文件再部署在rk3566板卡上&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="90" y="450" width="240" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="AnIz2MZ1j-742l2jBez1-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="AnIz2MZ1j-742l2jBez1-38" target="AnIz2MZ1j-742l2jBez1-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="AnIz2MZ1j-742l2jBez1-38" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;板卡对计算后的结果使用Opencv来进行处理&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="430" y="110" width="240" height="70" as="geometry" />
+          <mxGeometry x="470" y="110" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="AnIz2MZ1j-742l2jBez1-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="AnIz2MZ1j-742l2jBez1-40" target="AnIz2MZ1j-742l2jBez1-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnIz2MZ1j-742l2jBez1-40" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;把得到的数据打包后用串口或无线方式发送给ESP-32&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="470" y="238" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="AnIz2MZ1j-742l2jBez1-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="AnIz2MZ1j-742l2jBez1-42" target="AnIz2MZ1j-742l2jBez1-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AnIz2MZ1j-742l2jBez1-42" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ESP-32不仅要对SoC发来的数据进行反应，还要外接空气质量传感器、光照传感器、土壤湿度传感器等外设，综合处理数据并用屏幕或语音模块输出&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="430" y="352" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AnIz2MZ1j-742l2jBez1-44" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;ESP-32综合收集处理好各项数据后可外接机械臂（如果时间允许的话）或继电器等设备作为整个系统的反应&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="430" y="480" width="320" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
